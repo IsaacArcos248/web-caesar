@@ -9,8 +9,24 @@ form= '''
 <html>
     <head>
         <style>
-            form {{
+            h1 {{
+                display: block;
+                 font-size: 50px;
+                 text-align: center;
+                 }}
 
+            img {{
+                 display: block;
+                 margin-left: auto;
+                 margin-right: auto;
+                 width: 15%;
+            }}
+
+            .background{{
+                background: khaki;
+            }}
+
+            form {{
                 background-color: #eee;
                 padding: 20px;
                 margin: 0 auto;
@@ -25,7 +41,8 @@ form= '''
             }}
         </style>
     </head>
-    <body>
+    <body class = 'background'>
+        <h1> Web Caesar Project</h1>
         <form action = "/" method= "post" >
             <label for="rotate-by">Rotate by:</label>
 
@@ -34,9 +51,9 @@ form= '''
             <textarea name="textarea">{0}</textarea>
 
             <input type="submit" value="Rotate">
-
         </form>
-
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg3a9CLps_ogT6gN22VXA0wuUg8WZ0cF8KsS7KK2fFEmqugsLY" />
     </body>
 </html>
 '''
